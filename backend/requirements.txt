@@ -1,0 +1,20 @@
+# ── SolarForecast AI — Backend Flask ──────────────────────────────
+# Web framework
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Machine Learning — requis pour charger les 3 modèles (.pkl)
+# ⚠️ Version FIGÉE (==) et non >= : doit correspondre EXACTEMENT à la version
+# scikit-learn utilisée dans Colab au moment de joblib.dump(), sinon erreur
+# de désérialisation type "'SimpleImputer' object has no attribute '_fill_dtype'"
+scikit-learn==1.6.1
+xgboost>=2.0.0
+lightgbm>=4.0.0
+joblib>=1.3.0
+
+# Production server
+gunicorn>=21.0.0
